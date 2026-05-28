@@ -5,8 +5,8 @@ Landing page pública, responsiva e focada em conversão para uma psicóloga cha
 ## Estrutura
 
 - `index.html`: estrutura semântica da página, com header, hero, sobre, serviços, CTA e rodapé.
-- `assets/css/styles.css`: todo o visual da landing page em CSS puro, incluindo responsividade.
-- `assets/js/script.js`: menu mobile, ano automático no rodapé, inicialização dos ícones e evento de rastreamento dos CTAs.
+- `src/css/styles.css`: todo o visual da landing page em CSS puro, incluindo responsividade.
+- `src/js/script.js`: menu mobile, ano automático no rodapé, inicialização dos ícones e evento de rastreamento dos CTAs.
 
 ## Tecnologias Usadas
 
