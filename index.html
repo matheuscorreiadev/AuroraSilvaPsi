@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dra. Aurora Silva | Psicóloga Clínica</title>
+  <meta name="description" content="Landing page profissional da Dra. Aurora Silva, psicóloga especializada em cuidado emocional, terapia individual, casal, ansiedade e depressão." />
+  <meta name="theme-color" content="#d9f2e8" />
+
+  <!-- Preconnect para Fontes Externas (Performance) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+  <!-- Estilos da Aplicação -->
+  <link rel="stylesheet" href="src/css/styles.css" />
+
+  <!-- Scripts Otimizados (Deferidos para não bloquear o render) -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+  <script src="src/js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- ========================================== -->
+  <!-- HEADER & NAVEGAÇÃO                         -->
+  <!-- ========================================== -->
+  <header class="site-header">
+    <nav class="container nav" aria-label="Navegação principal">
+      <a href="#inicio" class="brand focus-ring" aria-label="Ir para o início">
+        <span class="brand-mark">AS</span>
+        <span class="brand-copy">
+          <span class="brand-name" data-field="professional_name">Dra. Aurora Silva</span>
+          <span class="brand-title" data-field="professional_title">Psicóloga clínica</span>
+        </span>
+      </a>
+
+      <!-- Menu Mobile Trigger -->
+      <button 
+        id="menuButton" 
+        class="menu-button focus-ring" 
+        type="button" 
+        aria-controls="mobileMenu" 
+        aria-expanded="false" 
+        aria-label="Abrir menu"
+      >
+        <i data-lucide="menu" aria-hidden="true"></i>
+      </button>
+
+      <!-- Desktop Menu -->
+      <div class="desktop-nav">
+        <a class="nav-link focus-ring" href="#sobre">Sobre mim</a>
+        <a class="nav-link focus-ring" href="#servicos">Especialidades</a>
+        <a class="nav-link focus-ring" href="#contato">Contato</a>
+        <a 
+          href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." 
+          class="button button-primary focus-ring" 
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="header-whatsapp"
+        >
+          <i data-lucide="calendar-check" aria-hidden="true"></i>
+          Agendar Consulta
+        </a>
+      </div>
+    </nav>
+
+    <!-- Mobile Menu Container -->
+    <div id="mobileMenu" class="mobile-menu is-hidden">
+      <div class="container mobile-menu-inner">
+        <a href="#sobre">Sobre mim</a>
+        <a href="#servicos">Especialidades</a>
+        <a href="#contato">Contato</a>
+        <a 
+          href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." 
+          class="button button-primary" 
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="mobile-whatsapp"
+        >
+          <i data-lucide="message-circle" aria-hidden="true"></i>
+          Agendar Consulta
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- CONTEÚDO PRINCIPAL                         -->
+  <!-- ========================================== -->
+  <main id="inicio">
+    
+    <!-- Hero Section -->
+    <section class="hero section-divider">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">
+            <i data-lucide="leaf" aria-hidden="true"></i>
+            Atendimento psicológico humanizado
+          </p>
+          <h1 data-field="hero_headline">
+            Cuidar da mente é abrir espaço para uma vida mais leve e consciente.
+          </h1>
+          <p class="hero-description" data-field="hero_subtitle">
+            Psicoterapia para adultos e casais, com escuta qualificada, acolhimento e estratégias clínicas para atravessar ansiedade, depressão e desafios emocionais.
+          </p>
+          <div class="hero-actions">
+            <a 
+              href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." 
+              class="button button-primary button-large focus-ring" 
+              target="_blank"
+              rel="noopener noreferrer"
+              data-cta="hero-whatsapp"
+            >
+              <i data-lucide="calendar-check" aria-hidden="true"></i>
+              Agendar Consulta
+            </a>
+            <a href="#servicos" class="button button-secondary button-large focus-ring">
+              Conhecer serviços
+              <i data-lucide="arrow-down" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Perfil / Imagem SVG inline de Placeholder -->
+        <figure class="profile-figure">
+          <div class="profile-frame">
+            <img 
+              src="/assets/foto-perfil.png" 
+              alt="Foto profissional da Dra. Aurora Silva" 
+              data-field="profile_photo" 
+            />
+          </div>
+          <figcaption class="sr-only">Imagem de perfil da psicóloga.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Section: Sobre Mim -->
+    <section id="sobre" class="section section-soft">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">Sobre mim</p>
+          <h2>Uma escuta clínica ética, acolhedora e baseada em vínculo.</h2>
+        </div>
+        <div class="about-copy">
+          <p data-field="bio">
+            Sou a Dra. Aurora Silva, psicóloga clínica dedicada a oferecer um espaço seguro para o autoconhecimento, fortalecimento emocional e construção de novas formas de lidar com o sofrimento psíquico.
+          </p>
+          <p>
+            Minha atuação integra abordagens como <strong>Terapia Cognitivo-Comportamental (TCC)</strong> e <strong>Psicanálise</strong>, respeitando a singularidade de cada pessoa e os objetivos de cada processo terapêutico.
+          </p>
+          <div class="tag-list" aria-label="Abordagens terapêuticas">
+            <span>TCC</span>
+            <span>Psicanálise</span>
+            <span>Acolhimento emocional</span>
+            <span>Atendimento online</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Serviços -->
+    <section id="servicos" class="section services-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Serviços e especialidades</p>
+          <h2>Atendimento para diferentes momentos da vida emocional.</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <i data-lucide="user-round" aria-hidden="true"></i>
+            <h3>Terapia Individual</h3>
+            <p>Espaço de escuta para autoconhecimento, regulação emocional e desenvolvimento de recursos internos.</p>
+          </article>
+
+          <article class="service-card">
+            <i data-lucide="heart-handshake" aria-hidden="true"></i>
+            <h3>Terapia de Casal</h3>
+            <p>Apoio para comunicação, conflitos, acordos e reconstrução de vínculos afetivos com mais clareza.</p>
+          </article>
+
+          <article class="service-card">
+            <i data-lucide="activity" aria-hidden="true"></i>
+            <h3>Ansiedade</h3>
+            <p>Tratamento para pensamentos acelerados, crises, preocupações excessivas e sintomas físicos.</p>
+          </article>
+
+          <article class="service-card">
+            <i data-lucide="cloud-sun" aria-hidden="true"></i>
+            <h3>Depressão</h3>
+            <p>Cuidado clínico para tristeza persistente, desânimo, isolamento e perda de sentido no cotidiano.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: CTA Final -->
+    <section class="cta-section">
+      <div class="container cta-grid">
+        <div>
+          <h2>Dê o primeiro passo com acolhimento e segurança.</h2>
+          <p>Entre em contato para consultar horários disponíveis e encontrar o melhor formato de atendimento para você.</p>
+        </div>
+        <a 
+          href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20consulta." 
+          class="button button-light button-large focus-ring" 
+          target="_blank"
+          rel="noopener noreferrer"
+          data-cta="section-whatsapp"
+        >
+          <i data-lucide="message-circle" aria-hidden="true"></i>
+          Agendar Consulta
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================== -->
+  <!-- FOOTER & INFORMAÇÕES DE CONTATO            -->
+  <!-- ========================================== -->
+  <footer id="contato" class="site-footer">
+    <div class="container footer-grid">
+      <section aria-labelledby="contato-titulo">
+        <p class="section-kicker footer-kicker">Contatos e localização</p>
+        <h2 id="contato-titulo">Fale com a Dra. Aurora Silva</h2>
+        <address class="contact-list">
+          <a class="focus-ring" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" data-field="whatsapp">
+            <i data-lucide="message-circle" aria-hidden="true"></i>
+            WhatsApp: (00) 00000-0000
+          </a>
+          <a class="focus-ring" href="mailto:contato@aurorasilvapsi.com.br" data-field="email">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            contato@aurorasilvapsi.com.br
+          </a>
+          <p data-field="address">
+            <i data-lucide="map-pin" aria-hidden="true"></i>
+            Av. Paulista, 1000 - São Paulo, SP
+          </p>
+        </address>
+      </section>
+
+      <!-- Google Maps Embed -->
+      <section aria-label="Mapa da clínica">
+        <div class="map-frame">
+          <iframe 
+            title="Mapa da clínica da Dra. Aurora Silva" 
+            src="https://www.google.com/maps?q=Av.%20Paulista%201000%20S%C3%A3o%20Paulo%20SP&output=embed" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </section>
+    </div>
+
+    <!-- Direitos Autorais / Identificação Profissional -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="currentYear"></span> Dra. Aurora Silva. Todos os direitos reservados.</p>
+        <p>CRP 00/00000</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
